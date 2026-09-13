@@ -1,0 +1,30 @@
+\begin{table}[!htbp]
+\centering
+\caption{OLS regression of percent change in firm value with controls}
+\label{tab:q6_ols}
+\begin{tabular}{lc}
+\toprule
+ & (1) \\
+ & Percent change in firm value \\
+\midrule
+Judge 1 & 5.095$^{***}$ \\
+ & (0.027) \\
+\addlinespace[2pt]
+Tech & 9.294$^{***}$ \\
+ & (0.029) \\
+\addlinespace[2pt]
+Pre filing firm value & 2.604$^{***}$ \\
+ & (0.011) \\
+\addlinespace[2pt]
+Constant & -3.038$^{***}$ \\
+ & (0.052) \\
+\midrule
+Observations & 999,999 \\
+$R^2$ & 0.295 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{0.90\linewidth}
+\footnotesize Notes: The regression specification is $Y_i = \alpha + \beta\,\mathrm{Judge\,1}_i + \gamma\,\mathrm{Tech}_i + \delta V_{before,i} + \varepsilon_i$. The dependent variable is $100(V_{after}-V_{before})/V_{before}$. Judge 0 and non Tech are the omitted categories. Tech equals one for firms in the Tech industry. Pre filing firm value is measured in millions of dollars. Conventional homoskedastic standard errors are in parentheses. The $t$ statistics are 188.971 for Judge 1, 315.581 for Tech, 236.771 for pre filing firm value, and -58.320 for the constant. All $p$ values are below 0.001. Significance levels use two sided tests. One observation with a zero denominator is excluded. $^{*}p<0.10$, $^{**}p<0.05$, and $^{***}p<0.01$.
+\end{minipage}
+\end{table}

@@ -1,0 +1,27 @@
+\begin{table}[H]
+\centering
+\caption{Nearest Neighbor Matching Estimates}
+\label{tab:q7_matching_estimates}
+\small
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
+\toprule
+\multicolumn{4}{l}{\textit{Panel A. Matched outcome comparison}} \\
+\addlinespace[3pt]
+Statistic & Matched Judge 0 & Judge 1 & Difference \\
+\midrule
+Mean percent change & 15.267 & 20.345 & 5.078 \\
+Matched observations & 468,681 & 468,681 & \\
+\addlinespace[6pt]
+\multicolumn{4}{l}{\textit{Panel B. Comparison with Question 6}} \\
+\addlinespace[3pt]
+Statistic & Matching & Adjusted OLS & Difference \\
+\midrule
+Judge 1 estimate & 5.078 & 5.095 & -0.017 \\
+\bottomrule
+\end{tabular*}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+\footnotesize Notes: Each Judge 1 firm is matched with replacement to the Judge 0 firm in the same industry that minimizes the absolute difference in pre filing firm value. Equal distances select the lower control value; duplicate control values select the smallest FirmNumber. The matched Judge 0 mean weights each control by its number of matches, and matched observations count entries rather than unique controls. Panel A reports outcome means in percent and the Judge 1 minus matched Judge 0 difference in percentage points. Panel B reports estimates and the matching minus adjusted OLS difference in percentage points. Differences use unrounded estimates. One observation with zero pre filing value is excluded. Standard errors are not reported.
+\end{minipage}
+\end{table}

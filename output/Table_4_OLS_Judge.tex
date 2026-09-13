@@ -1,0 +1,24 @@
+\begin{table}[!htbp]
+\centering
+\caption{Simple OLS regression of percent change in firm value}
+\label{tab:q4_ols}
+\begin{tabular}{lc}
+\toprule
+ & (1) \\
+ & Percent change in firm value \\
+\midrule
+Judge 1 & 11.258$^{***}$ \\
+ & (0.023) \\
+\addlinespace[2pt]
+Constant & 9.087$^{***}$ \\
+ & (0.016) \\
+\midrule
+Observations & 999,999 \\
+$R^2$ & 0.191 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{0.76\linewidth}
+\footnotesize Notes: The regression specification is $Y_i = \alpha + \beta\,\mathrm{Judge\,1}_i + \varepsilon_i$. The dependent variable is $100(V_{after}-V_{before})/V_{before}$. Judge 0 is the omitted category. Conventional homoskedastic standard errors are in parentheses. The $t$ statistics are 486.127 for Judge 1 and 573.189 for the constant. Both $p$ values are below 0.001. Significance levels use two sided tests. One observation with a zero denominator is excluded. $^{*}p<0.10$, $^{**}p<0.05$, and $^{***}p<0.01$.
+\end{minipage}
+\end{table}

@@ -1,0 +1,32 @@
+\begin{table}[H]
+\centering
+\caption{Overall Matching Quality}
+\label{tab:q7_matching_quality}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}cccc@{}}
+\toprule
+\multicolumn{4}{l}{\textit{Panel A. Absolute value distance in thousands of dollars}} \\
+\addlinespace[3pt]
+Mean & Median & P95 & Maximum \\
+\midrule
+0.949 & 0.026 & 0.889 & 2,003.334 \\
+\addlinespace[6pt]
+\multicolumn{4}{l}{\textit{Panel B. Control availability and exact matches}} \\
+\addlinespace[3pt]
+Eligible controls & Unique controls used & Share used & Exact matches \\
+\midrule
+531,318 & 170,531 & 32.096\% & 8 \\
+\addlinespace[6pt]
+\multicolumn{4}{l}{\textit{Panel C. Control reuse and empirical support}} \\
+\addlinespace[3pt]
+Reused controls & Maximum reuse & \shortstack{Matches using\\reused controls} & Outside support \\
+\midrule
+64,706 & 1,032 & 77.421\% & 455 \\
+\bottomrule
+\end{tabular*}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+\footnotesize Notes: Distances are absolute differences in pre filing firm value; P95 denotes the 95th percentile. Exact matches have zero value distance. Share used is the percentage of eligible Judge 0 firms selected at least once. Reused controls are distinct Judge 0 firms selected more than once. Matches using reused controls is the percentage of treated firms whose selected control is used at least twice. Outside support counts treated firms with values below the minimum or above the maximum Judge 0 value in their industry. These firms are retained and matched to the nearest boundary control. Matching uses replacement without a caliper.
+\end{minipage}
+\end{table}

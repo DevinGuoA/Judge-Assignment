@@ -1,0 +1,24 @@
+\begin{table}[H]
+\centering
+\caption{Matching Quality by Industry}
+\label{tab:q7_matching_quality_industry}
+\small
+\renewcommand{\arraystretch}{1.15}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrrr@{}}
+\toprule
+Industry & \shortstack{Treated\\firms} & \shortstack{Unique\\controls used} & \multicolumn{3}{c}{Absolute value distance} & \shortstack{Outside\\support} \\
+\cmidrule(lr){4-6}
+ & & & Mean & P95 & Maximum & \\
+\midrule
+Construction & 69,036 & 47,985 & 0.098 & 0.104 & 705.803 & 10 \\
+Manufacturing & 98,230 & 57,676 & 0.093 & 0.122 & 325.054 & 5 \\
+Retail & 68,796 & 47,942 & 0.125 & 0.103 & 1,342.936 & 6 \\
+Tech & 232,619 & 16,928 & 1.807 & 2.103 & 2,003.334 & 434 \\
+\bottomrule
+\end{tabular*}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}
+\footnotesize Notes: Matching is exact on the four industry categories and selects the nearest pre filing value with replacement. Distances are in thousands of dollars; P95 denotes the 95th percentile. Unique controls used counts distinct matched Judge 0 firms within each industry. Outside support counts treated firms whose pre filing value is outside their industry's observed Judge 0 value range. All such firms remain in the matching estimate.
+\end{minipage}
+\end{table}
